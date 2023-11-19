@@ -31,10 +31,4 @@ function renderGallery() {
 
 renderGallery();
 
-const lightbox = new SimpleLightbox(".gallery a", {
-  captions: true,
-  captionDelay: 250,
-  captionsData: "alt",
-  enableKeyboard: true,
-});
 console.log(galleryItems);
