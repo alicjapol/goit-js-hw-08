@@ -13,9 +13,7 @@ player.on(
 
 const storedTime = localStorage.getItem('videoplayer-current-time');
 
-
 // tego kodu setCurrentTime w ogóle nie rozumiem, skopiowałam z pliku readMe.
-
 
 if (storedTime) {
   player
