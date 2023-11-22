@@ -19,7 +19,13 @@ form.addEventListener('input', saveState);
 form.addEventListener('submit', event => {
   event.preventDefault();
 
+  console.log({
+    email: emailInput.value,
+    message: messageInput.value,
+  });
+
   localStorage.removeItem('feedback-form-state');
+  form.reset();
 });
 
 const savedState = JSON.parse(localStorage.getItem('feedback-form-state'));
